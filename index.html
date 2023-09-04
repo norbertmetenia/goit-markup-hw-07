@@ -55,20 +55,14 @@
             <li><a href="portfolio.html" class="mobile-link">Portfolio</a></li>
             <li><a href="#" class="mobile-link">Kontakt</a></li>
           </ul>
-          <ul class="contact_list">
-            <div class="number">
-              <a href="tel:48111111111" class="number_contain">
-                <!-- <svg width="10px" height="16px">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg> -->
+          <ul class="contact_list--mobile">
+            <div>
+              <a href="tel:48111111111" class="number_contain--mobile">
                 +48 111 111 111</a
               >
             </div>
-            <div class="mail">
-              <a href="mailto:info@devstudio.com" class="mail_contain">
-                <!-- <svg width="16px" height="12px">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg> -->
+            <div>
+              <a href="mailto:info@devstudio.com" class="mail_contain--mobile">
                 info@devstudio.com</a
               >
             </div>
@@ -92,7 +86,7 @@
           </ul>
         </div>
 
-        <!-- <nav>
+        <nav>
           <ul class="navigation">
             <li>
               <div class="navigation_emphasis">
@@ -107,22 +101,24 @@
             </li>
           </ul>
         </nav>
-        <div class="mail">
-          <a href="mailto:info@devstudio.com" class="mail_contain">
-            <svg width="16px" height="12px">
-              <use href="./images/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com</a
-          >
-        </div>
-        <div class="number">
-          <a href="tel:48111111111" class="number_contain"
-            ><svg width="10px" height="16px">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +48 111 111 111</a
-          >
-        </div> -->
+        <ul class="contact_list">
+          <div class="mail">
+            <a href="mailto:info@devstudio.com" class="mail_contain">
+              <svg width="16px" height="12px">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </div>
+          <div class="number">
+            <a href="tel:48111111111" class="number_contain"
+              ><svg width="10px" height="16px">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
+            >
+          </div>
+        </ul>
       </header>
     </div>
     <!--MAIN-->
@@ -269,7 +265,7 @@
       </section>
       <!--CZYM SIE ZAJMUJEMY-->
 
-      <!-- <section class="activities container">
+      <section class="activities container">
         <div>
           <h2 class="activities_header">Czym się zajmujemy</h2>
         </div>
@@ -278,7 +274,7 @@
             <li class="activities_list--child">
               <p class="activities_paragraph">APLIKACJE KOMPUTEROWE</p>
               <img
-                src="images/img1.jpg"
+                src="images/activities-computer.jpg"
                 alt="pisanie na komputerze"
                 width="370"
                 height="294"
@@ -287,7 +283,7 @@
             <li class="activities_list--child">
               <p class="activities_paragraph">APLIKACJE MOBILNE</p>
               <img
-                src="images/img2.jpg"
+                src="images/activities-phone.jpg"
                 alt="przeglądanie telefonu przy komputerze"
                 width="370"
                 height="294"
@@ -296,7 +292,7 @@
             <li class="activities_list--child">
               <p class="activities_paragraph">ROZWIĄZANIA GRAFICZNE</p>
               <img
-                src="images/img3.jpg"
+                src="images/activities-tablet.jpg"
                 alt="pisanie na tablecie przy komputerze"
                 width="370"
                 height="294"
@@ -304,7 +300,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--NASZ ZESPOL-->
 
       <div class="team">
@@ -315,13 +311,22 @@
           <div class="team_div">
             <ul class="team_list">
               <li class="team_list--item">
-                <img
-                  src="images/1person.jpg"
-                  alt="John Doe"
-                  width="450"
-                  height="460"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="images/1personx3.jpg"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="images/1personx2.jpg"
+                  />
 
+                  <img
+                    src="images/1person.jpg"
+                    alt="John Doe"
+                    style="width: auto"
+                  />
+                </picture>
                 <h3 class="team_name">John Doe</h3>
                 <p class="team_paragraph">Product Designer</p>
                 <div class="team_box">
@@ -357,12 +362,22 @@
               </li>
 
               <li class="team_list--item">
-                <img
-                  src="images/2person.jpg"
-                  alt="John Doe"
-                  width="450"
-                  height="460"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="images/2personx3.jpg"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="images/2personx2.jpg"
+                  />
+
+                  <img
+                    src="images/2person.jpg"
+                    alt="John Doe"
+                    style="width: auto"
+                  />
+                </picture>
 
                 <h3 class="team_name">John Doe</h3>
                 <p class="team_paragraph">Frontend Developer</p>
@@ -399,12 +414,22 @@
               </li>
 
               <li class="team_list--item">
-                <img
-                  src="images/3person.jpg"
-                  alt="John Doe"
-                  width="450"
-                  height="460"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="images/3personx3.jpg"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="images/3personx2.jpg"
+                  />
+
+                  <img
+                    src="images/3person.jpg"
+                    alt="John Doe"
+                    style="width: auto"
+                  />
+                </picture>
 
                 <h3 class="team_name">John Doe</h3>
                 <p class="team_paragraph">Marketing</p>
@@ -441,12 +466,22 @@
               </li>
 
               <li class="team_list--item">
-                <img
-                  src="images/4person.jpg"
-                  alt="John Doe"
-                  width="450"
-                  height="460"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="images/4personx3.jpg"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="images/4personx2.jpg"
+                  />
+
+                  <img
+                    src="images/4person.jpg"
+                    alt="John Doe"
+                    style="width: auto"
+                  />
+                </picture>
 
                 <h3 class="team_name">John Doe</h3>
                 <p class="team_paragraph">UI Designer</p>
@@ -540,6 +575,7 @@
     <div class="footer">
       <footer class="footer_section container">
         <div>
+          <!-- <div class="footer_tablet"> -->
           <a href="#" class="footer_links"
             ><span class="logo_semi--footer">Web</span
             ><span class="logo_end--footer">Studio</span></a
@@ -595,7 +631,9 @@
               </a>
             </div>
           </div>
+          <!-- </div> -->
         </div>
+
         <div class="newsletter">
           <p class="newsletter_text">ZAPISZ SIĘ DO NEWSLETTERA</p>
           <form name="newsletter_form" class="newsletter_form">
