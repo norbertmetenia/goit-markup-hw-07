@@ -23,11 +23,17 @@ body {
 .logo {
   text-decoration: none;
   letter-spacing: 0.03em;
-  /* margin-top: 24px;
-  margin-bottom: 25px; */
   margin-top: 16px;
   margin-bottom: 16px;
+
+  /* margin-top: 24px;
+  margin-bottom: 25px; */
 }
+/* @media screen {min-width: ;
+    .logo {
+
+    }
+} */
 .logo_semi {
   color: rgba(33, 150, 243, 1);
   font-family: "Raleway", sans-serif;
@@ -450,7 +456,7 @@ textarea:focus {
   justify-content: center;
   /* width: 270px;
   height: 120px; */
-  width: 450px;
+  /* width: 450px; */
   height: 120px;
   background-color: rgba(245, 244, 250, 1);
   border-radius: 4px;
